@@ -1,30 +1,27 @@
-# vue-reader
+### 技术栈：
 
-> A Vue.js project
+---
 
-## Build Setup
+[Vue.js](https://cn.vuejs.org/)
 
-``` bash
-# install dependencies
+[Vue-router](https://router.vuejs.org/zh-cn/)
+
+[Vue-resource](https://etianqq.gitbooks.io/vue2/content/chapter2-vue-resource.html)
+
+[Element](http://element.eleme.io/#/zh-CN/component/installation)
+
+[CnodeJS API](https://cnodejs.org/api)
+
+### 本地运行：
+
+---
+
+```bash
+git clone https://github.com/MineLi/cnode_vue.git
+cd cnode_vue
 npm install
-
-# serve with hot reload at localhost:8080
 npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
 ```
 
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+PS: 默认用的是8080端口。
+
