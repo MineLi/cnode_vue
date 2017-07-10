@@ -3,9 +3,11 @@
     <!--<img src="./assets/logo.png">-->
     <header>
       <div class="header-content">
-        <div class="logo-content">
-          <img src="//o4j806krb.qnssl.com/public/images/cnodejs_light.svg" alt="">
-        </div>
+        <router-link to="/">
+          <div class="logo-content">
+            <img src="//o4j806krb.qnssl.com/public/images/cnodejs_light.svg" alt="">
+          </div>
+        </router-link>
         <ul>
           <router-link to="/">
             <li>首页</li>
@@ -40,7 +42,10 @@ span,
 a,
 p,
 ul,
-li {
+li,
+dl,
+dd,
+dt {
   margin: 0;
   padding: 0;
 }
