@@ -1,15 +1,15 @@
 <template>
-    <div id="articalContent">
-        <div class="articalItem" v-for="(item,i) in articalList" :key="i">
+    <div id="articleContent">
+        <div class="articleItem" v-for="(item,i) in articleList" :key="i">
             <dl>
                 <dd>
                     <img :src="item.author.avatar_url" alt="">
                 </dd>
                 <dt>
-                    <router-link to="/artical" class="routeStyle">
-                        <div class="articalName">{{item.title}}</div>
+                    <router-link :to="'/article/'+ item.id" class="routeStyle">
+                        <div class="articleName">{{item.title}}</div>
                     </router-link>
-                    <div class="articalInfo">
+                    <div class="articleInfo">
                         <span>回复量:</span>
                         <span>{{item.reply_count}}</span>
                         <span class="click">点击量:</span>
@@ -32,18 +32,18 @@ export default {
         }
     },
     methods: {
-        getArticalList() {
-            this.$store.dispatch("getArticalList");
+        getarticleList() {
+            this.$store.dispatch("getarticleList");
         },
         formatTime(val) {
             return String(val).split("T")[0];
         }
     },
     computed: {
-        ...mapState(['articalList'])
+        ...mapState(['articleList'])
     },
     created() {
-        this.getArticalList();
+        this.getarticleList();
     }
 }
 </script>
@@ -57,11 +57,11 @@ a {
     color: #42b983;
 }
 
-#articalContent {
+#articleContent {
     width: 1095px;
     margin: 10px auto 0;
     background-color: #fff;
-    .articalItem {
+    .articleItem {
         width: 100%;
         height: 60px;
         padding: 10px;
@@ -84,13 +84,13 @@ a {
                 }
             }
         }
-        .articalName {
+        .articleName {
             height: 35px;
             line-height: 35px;
             font-size: 22px;
             text-align: left;
         }
-        .articalInfo {
+        .articleInfo {
             height: 25px;
             line-height: 25px;
             color: #8492a6;

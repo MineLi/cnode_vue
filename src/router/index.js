@@ -1,16 +1,17 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import articalList from '@/components/articalList'
+import articleList from '@/components/articleList'
 import aboutMe from '@/components/aboutMe'
-import artical from '@/components/artical'
+import aboutAuthor from '@/components/aboutAuthor'
+import article from '@/components/article'
 Vue.use(Router)
 
 export default new Router({
   routes: [
     {
       path: '/',
-      name: 'articalList',
-      component: articalList
+      name: 'articleList',
+      component: articleList
     },
     {
       path: '/about',
@@ -18,9 +19,14 @@ export default new Router({
       component: aboutMe
     },
     {
-      path: '/artical',
-      name: 'artical',
-      component: artical
+      path: '/article/:articleId',
+      name: 'article',
+      component: article
+    },
+    {
+      path: '/aboutAuthor',
+      name: 'aboutAuthor',
+      component: aboutAuthor
     }
   ]
 })

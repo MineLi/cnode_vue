@@ -1,8 +1,14 @@
 export default {
-    addArticalNumber(state) {
-        state.articalNumber += 10
+    addarticleNumber(state) {
+        state.articleNumber += 10
     },
-    saveArticalList(state, obj) {
-        state.articalList = obj
+    savearticleList(state, obj) {
+        state.articleList = obj
+    },
+    addarticle(state, obj) {
+        state.articleMain = obj;
+    },
+    addArticleAuthor(state, obj) {
+        state.articleAuthor = obj;
     }
 }

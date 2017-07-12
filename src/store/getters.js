@@ -1,3 +1,3 @@
 export default {
-    getArticalNumber: state => state.articalNumber
+    getarticleNumber: state => state.articleNumber
 }
