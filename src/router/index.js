@@ -24,7 +24,7 @@ export default new Router({
       component: article
     },
     {
-      path: '/aboutAuthor',
+      path: '/aboutAuthor/:authorId',
       name: 'aboutAuthor',
       component: aboutAuthor
     }

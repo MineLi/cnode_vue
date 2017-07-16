@@ -33,7 +33,7 @@ html,
 body {
   width: 100%;
   height: 100%;
-  background-color: #eee;
+  background-color: #e1e1e1;
 }
 
 body {

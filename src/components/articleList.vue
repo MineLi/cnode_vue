@@ -2,7 +2,7 @@
     <div id="articleContent">
         <div class="articleItem" v-for="(item,i) in articleList" :key="i">
             <dl>
-                <dd>
+                <dd @click="toAboutAuthor(item.author.loginname)">
                     <img :src="item.author.avatar_url" alt="">
                 </dd>
                 <dt>
@@ -37,6 +37,9 @@ export default {
         },
         formatTime(val) {
             return String(val).split("T")[0];
+        },  
+        toAboutAuthor(author_id){
+            this.$router.push(`/aboutAuthor/${author_id}`);
         }
     },
     computed: {
@@ -76,6 +79,9 @@ a {
             height: 60px;
             dd {
                 margin-right: 30px;
+                &:hover{
+                    cursor: pointer;
+                }
             }
             dt {
                 .routeStyle {

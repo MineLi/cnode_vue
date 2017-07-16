@@ -10,15 +10,13 @@ export default {
             limit: number,
             mdrender: 'false',
         }).then((res) => {
-            console.log(res);
             context.commit("savearticleList", res.data)
         }, (err) => {
             console.log(err)
         })
     },
-    getarticleMain(context,url) {
+    getarticleMain(context, url) {
         get(url).then((res) => {
-            console.log(res);
             if (res.success === true) {
                 context.commit('addarticle', res.data);
                 context.commit('addArticleAuthor', res.data.author.loginname);
@@ -28,5 +26,12 @@ export default {
         }).catch((err) => {
             console.error(err);
         });
+    },
+    getUserInfo({commit},url) {
+        get(url).then((res)=>{
+            commit("addUserInfo",res.data);
+        }).catch((error)=>{
+            console.error(error)
+        })
     }
 }

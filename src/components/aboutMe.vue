@@ -1,27 +1,5 @@
 <template>
     <div class='about'>
-        <!--<span>
-                        <strong>作者: &nbsp;&nbsp;</strong>
-                    </span>
-                    <a href='http://limingyang.xyz' target='_blank'>李明洋</a>
-                    </span>
-                    <br>
-                    <span>
-                        <strong>源代码: &nbsp;&nbsp;</strong>
-                    </span>
-                    <a href='https://github.com/MineLi' target='_blank'>Github</a>
-                    <br>
-                    <br>
-                    <span>
-                        <strong>技术栈: </strong>
-                    </span>
-                    <ul>
-                        <li>Vue.js</li>
-                        <li>Vue-router</li>
-                        <li>Axios</li>
-                        <li>Element</li>
-                        <li>CnodeJS API</li>
-                    </ul>-->
         <ul>
             <li>
                 <span class="title">作者:</span>
@@ -33,7 +11,7 @@
             </li>
             <li>
                 <span class="title">源代码:</span>
-                <a href="https://github.com/MineLi" target='_blank'>Github</a>&nbsp;&nbsp;&nbsp;&nbsp;欢迎 star
+                <a href="https://github.com/MineLi/cnode_vue" target='_blank'>Github</a>&nbsp;&nbsp;&nbsp;&nbsp;欢迎 star
             </li>
             <li>
                 <span class="title">联系我:</span>

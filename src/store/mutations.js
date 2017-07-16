@@ -10,5 +10,8 @@ export default {
     },
     addArticleAuthor(state, obj) {
         state.articleAuthor = obj;
+    },
+    addUserInfo(state,obj){
+        state.userInfo = obj;
     }
 }

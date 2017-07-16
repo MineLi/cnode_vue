@@ -21,7 +21,7 @@
                 <div class="replyNum">{{articleMain.reply_count}} 回复</div>
                 <div v-for='(reply,i) in articleMain.replies' class='replySec' :key="i">
                     <div class="author-content">
-                        <router-link :to='{name: "aboutAuthor",params:{name: reply.author.loginname}}'>
+                        <router-link :to='{name: "aboutAuthor",params:{authorId: reply.author.loginname}}'>
                             <img :src='reply.author.avatar_url'>
                         </router-link>
                         <span class='replyName'>{{reply.author.loginname}}</span>
@@ -72,7 +72,7 @@ a {
 
 .headInfo {
     background-color: #fff;
-    margin: 0 auto;
+    margin: 10px auto 0;
     width: 1095px;
     padding: 10px;
     box-sizing: border-box;
@@ -123,7 +123,8 @@ a {
     box-sizing: border-box;
     background-color: #fff;
     font-size: 15px;
-
+    position: relative;
+    left: -10px;
 }
 
 // #reply img {
